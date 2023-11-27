@@ -7,6 +7,11 @@ REQUIRED: This needs a basic edit to match your environment – the `-SearchBase
 
 You must have AD roles and permissions to pull machine names from AD. If you can't or don't want to use AD, but you know the names of the machines you want to check (and you have remote access to them), you could just remove the first few commands and set a variable equal to all the machines names, and replace `$RemainingADServers` with your variable.
 
+REQUIRED: The final data will be in a variable `$FinalReport`. It's up to you to do what you want with it.
+- If you're running the code manually, you can just look at the results in the console.
+- I've included an example line of code for emailing the report. This must be changed or removed.
+- You could send the report to a .txt, .txt, etc.
+
 Your typical disclaimer about running `Invoke-Command` applies here. Namely:
 - The account running this script needs to have remote access to the machines.
 - The remote machines need to allow Windows remote management (WinRM).
