@@ -10,7 +10,7 @@ You must have AD roles and permissions to pull machine names from AD. If you can
 REQUIRED: The final data will be in a variable `$FinalReport`. It's up to you to do what you want with it.
 - If you're running the code manually, you can just look at the results in the console.
 - I've included an example line of code for emailing the report. This must be changed or removed.
-- You could send the report to a .txt, .txt, etc.
+- You could send the report to a .txt, .csv, etc.
 
 Your typical disclaimer about running `Invoke-Command` applies here. Namely:
 - The account running this script needs to have remote access to the machines.
